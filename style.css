@@ -1,16 +1,127 @@
-.link-btn{
-    display:block;
-    text-decoration:none;
-    background:#9caf88;
-    color:white;
-    padding:15px;
-    margin:12px 0;
-    border-radius:12px;
-    font-weight:600;
-    transition:0.3s;
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
 }
 
-.link-btn:hover{
-    transform:translateY(-3px);
-    background:#7f936f;
+body {
+  font-family: Arial, sans-serif;
+  background:
+    radial-gradient(circle at top, #dcebd6, transparent 35%),
+    linear-gradient(135deg, #f7f3e8, #d8ead3);
+  min-height: 100vh;
+  color: #263126;
+}
+
+.page {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 24px;
+}
+
+.card {
+  width: 100%;
+  max-width: 460px;
+  background: rgba(255, 255, 255, 0.92);
+  border: 1px solid rgba(156, 175, 136, 0.35);
+  border-radius: 28px;
+  padding: 34px 24px;
+  text-align: center;
+  box-shadow: 0 20px 45px rgba(42, 54, 42, 0.18);
+}
+
+.profile-circle {
+  width: 96px;
+  height: 96px;
+  margin: 0 auto 18px;
+  border-radius: 50%;
+  background: linear-gradient(135deg, #9caf88, #6f8664);
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  font-size: 32px;
+  font-weight: 700;
+  letter-spacing: 1px;
+}
+
+h1 {
+  font-size: 30px;
+  margin-bottom: 8px;
+}
+
+.title {
+  font-size: 15px;
+  font-weight: 700;
+  color: #4f6f52;
+  margin-bottom: 8px;
+  line-height: 1.5;
+}
+
+.subtitle {
+  font-size: 14px;
+  color: #666;
+  margin-bottom: 28px;
+}
+
+.links {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.link-btn {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+  text-align: left;
+  text-decoration: none;
+  background: #ffffff;
+  color: #263126;
+  padding: 16px;
+  border-radius: 18px;
+  border: 1px solid #d8e3d1;
+  box-shadow: 0 8px 18px rgba(0, 0, 0, 0.08);
+  transition: 0.25s ease;
+}
+
+.link-btn:hover {
+  transform: translateY(-4px);
+  background: #f4f8f1;
+  border-color: #9caf88;
+}
+
+.link-btn span {
+  font-size: 28px;
+}
+
+.link-btn strong {
+  display: block;
+  font-size: 16px;
+  margin-bottom: 4px;
+}
+
+.link-btn small {
+  color: #666;
+  font-size: 13px;
+  line-height: 1.4;
+}
+
+.footer {
+  margin-top: 26px;
+  font-size: 13px;
+  color: #5d665d;
+  line-height: 1.5;
+}
+
+@media (max-width: 480px) {
+  .card {
+    padding: 30px 18px;
+  }
+
+  h1 {
+    font-size: 26px;
+  }
 }
